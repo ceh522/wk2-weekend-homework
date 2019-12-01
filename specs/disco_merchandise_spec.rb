@@ -15,7 +15,7 @@ class Disco_MerchandiseTest < MiniTest::Test
     assert_equal("Disco Glasses", @disco_merchandise1.name)
   end
 
-  def test_get_pricce
+  def test_get_price
     assert_equal(4, @disco_merchandise1.price)
   end
 

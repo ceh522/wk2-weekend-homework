@@ -1,7 +1,11 @@
 class Karaoke_Bar
 
-def initialize()
+  attr_reader :name, :songs_available, :rooms
 
-end
+  def initialize(name, songs_available, rooms)
+    @name = name
+    @songs_available = songs_available
+    @rooms = rooms
+  end
 
 end

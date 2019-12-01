@@ -5,6 +5,7 @@ Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 require_relative('../song.rb')
 require_relative('../guest_bar.rb')
 require_relative('../room.rb')
+require_relative('../disco_merchandise')
 require_relative('../karaoke_bar.rb')
 
 class Karaoke_BarTest < MiniTest::Test
@@ -29,4 +30,7 @@ end
 
 def test_get_rooms
   assert_equal([@room1, @room2], @karaoke_bar1.rooms)
-end 
+end
+
+
+#not being used at the moment, but could be used to add more functionality, if the project was being developed, e.g. hold a selection of songs that could be passed to rooms, add up the takings from each of the rooms, etc. 
